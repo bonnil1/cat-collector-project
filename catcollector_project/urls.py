@@ -21,4 +21,8 @@ urlpatterns = [
     path('', include('catcollector_app.urls')),
     path('admin/', admin.site.urls),
     # '' represents the "starts with" path
+
+    #built-in auth views
+    path('accounts/', include('django.contrib.auth.urls')),
+    
 ]
